@@ -1,0 +1,141 @@
+# depslib dependency file v1.0
+1616499212 source:d:\dinojump\button.cpp
+	"Button.h"
+
+1616499209 d:\dinojump\button.h
+	"Game_Base.h"
+	"LTexture.h"
+
+1617040877 d:\dinojump\game_base.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<vector>
+	<ctime>
+	<math.h>
+	<stdlib.h>
+
+1617032901 d:\dinojump\ltexture.h
+	"Game_Base.h"
+
+1617069474 source:d:\dinojump\character.cpp
+	"Character.h"
+
+1617036187 d:\dinojump\character.h
+	"LTexture.h"
+
+1617069947 source:d:\dinojump\enemy.cpp
+	"Enemy.h"
+
+1617069474 d:\dinojump\enemy.h
+	"LTexture.h"
+	"Game_Base.h"
+
+1616499192 source:d:\dinojump\game_base.cpp
+	"Game_Base.h"
+
+1617043513 source:d:\dinojump\game_utils.cpp
+	"Game_Utils.h"
+
+1617042282 d:\dinojump\game_utils.h
+	"Game_Base.h"
+	"Button.h"
+	"Enemy.h"
+	"Character.h"
+
+1617032901 source:d:\dinojump\ltexture.cpp
+	"LTexture.h"
+
+1617069831 source:d:\dinojump\main.cpp
+	"Game_Base.h"
+	"Game_Utils.h"
+	"LTexture.h"
+	"Button.h"
+	"Character.h"
+	"Enemy.h"
+
+1616947007 source:d:\racing\load.cpp
+	"load.h"
+
+1616948290 d:\racing\load.h
+	"common.h"
+
+1617000299 d:\racing\common.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<vector>
+	<ctime>
+	<math.h>
+	<stdlib.h>
+
+1616499212 source:d:\traffic\button.cpp
+	"Button.h"
+
+1617070981 d:\traffic\button.h
+	"Game_Base.h"
+	"loadtexture.h"
+
+1617040877 d:\traffic\game_base.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<vector>
+	<ctime>
+	<math.h>
+	<stdlib.h>
+
+1617069474 source:d:\traffic\character.cpp
+	"Character.h"
+
+1617071001 d:\traffic\character.h
+	"loadtexture.h"
+
+1617179414 source:d:\traffic\enemy.cpp
+	"Enemy.h"
+
+1617070992 d:\traffic\enemy.h
+	"loadtexture.h"
+	"Game_Base.h"
+
+1616499192 source:d:\traffic\game_base.cpp
+	"Game_Base.h"
+
+1617070969 d:\traffic\loadtexture.h
+	"Game_Base.h"
+
+1617070969 source:d:\traffic\loadtexture.cpp
+	"loadtexture.h"
+
+1617070969 source:d:\traffic\drawandcheck.cpp
+	"drawandcheck.h"
+
+1617070969 d:\traffic\drawandcheck.h
+	"Game_Base.h"
+	"Button.h"
+	"Enemy.h"
+	"Character.h"
+
+1617072400 source:d:\traffic\main.cpp
+	"Game_Base.h"
+	"drawandcheck.h"
+	"loadtexture.h"
+	"Button.h"
+	"Character.h"
+	"Enemy.h"
+
