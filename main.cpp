@@ -164,7 +164,7 @@ int main(int argc, char* argv[])
 						SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
 						SDL_RenderClear(gRenderer);
 
-						RenderScrollingGround(OffsetSpeed_Ground, acceleration, gBackgroundTexture, gRenderer);
+						ScrollingImage(OffsetSpeed_Ground, acceleration, gBackgroundTexture, gRenderer);
 
 						car.UpdateMove();
 						SDL_Rect* currentClip_Car = nullptr;
