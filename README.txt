@@ -1,4 +1,4 @@
-Các chức năng:
+A.)Các chức năng:
 1.Menu
   -Nút Play để vào game
   -Nút Help hướng dẫn chơi game + Nút Back
@@ -14,3 +14,5 @@ Các chức năng:
   -Game Over
   -Bấm Space để chơi lại
   -Nhấn ESC để thoát
+ B.)Nguồn tham khảo : game Khủng Long
+ Thay đổi: Cuộn màn hình, kiểm tra va chạm, Sinh nhân vật,....
