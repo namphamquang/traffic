@@ -348,18 +348,10 @@ void DrawEndGameSelection(LTexture gLoseTexture,
 					Play_Again = false;
 				}
 
-				if (e->type == SDL_KEYDOWN)
+				if (e->type == SDL_KEYDOWN
+				&& (e->key.keysym.sym==SDLK_SPACE)))
 				{
-					switch (e->key.keysym.sym)
-					{
-					case SDLK_SPACE:
 						End_Game = true;
-						break;
-					case SDLK_ESCAPE:
-						End_Game = true;
-						Play_Again = false;
-						break;
-					}
 				}
 			}
 
