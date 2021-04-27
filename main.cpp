@@ -202,9 +202,9 @@ int main(int argc, char* argv[])
 				DrawEndGameSelection(gLoseTexture, &e, gRenderer, Play_Again);
 				if (!Play_Again)
 				{
-					obs1.~Obstacle();
-					obs2.~Obstacle();
-					obs3.~Obstacle();
+					obs1.FreeObstacle();
+					obs2.FreeObstacle();
+					obs3.FreeObstacle();
 				}
 			}
 		}
