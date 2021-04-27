@@ -8,7 +8,7 @@ class Obstacle
 {
 public:
 	Obstacle();
-	~Obstacle();
+	FreeObstacle();
 
 	void LoadFromFile(std::string path, SDL_Renderer* gRenderer);
 	void Move(const int& acceleration);
