@@ -9,7 +9,7 @@ Obstacle::Obstacle() //khởi tạo vật cản
 	ObsTexture = nullptr;
 }
 
-Obstacle::~Obstacle() //giải phóng vật cản
+Obstacle::FreeObstacle() //giải phóng vật cản
 {
 	posX1 = 0;
 	posY1 = 0;
