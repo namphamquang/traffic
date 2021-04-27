@@ -18,7 +18,7 @@ void UpdateHighScore(std::string path,
 
 int UpdateGameTimeAndScore(int& time, int& speed, int& score);
 
-void RenderScrollingGround(int& speed,
+void ScrollingImage(int& speed,
     const int acceleration,
     LTexture gGroundTexture,
     SDL_Renderer* gRenderer);
