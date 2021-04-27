@@ -49,7 +49,7 @@ int UpdateGameTimeAndScore(int& time,
 
 
 
-void RenderScrollingGround(int& speed,
+void ScrollingImage(int& speed,
 	const int acceleration,
 	LTexture gBackgroundTexture,
 	SDL_Renderer* gRenderer)
