@@ -175,7 +175,7 @@ int main(int argc, char* argv[])
 						obs1.Move(acceleration);
 						obs1.Render(gRenderer);
 
-                        obs2.Move(acceleration);
+                        			obs2.Move(acceleration);
 						obs2.Render(gRenderer);
 
 						obs3.Move(acceleration);
