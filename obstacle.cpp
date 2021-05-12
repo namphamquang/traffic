@@ -1,6 +1,6 @@
 #include "obstacle.h"
 
-Obstacle::Obstacle() //khởi tạo vật cản
+Obstacle::Obstacle() 
 {
 	posX1 = 0;
 	posY1 = 0;
@@ -9,7 +9,7 @@ Obstacle::Obstacle() //khởi tạo vật cản
 	ObsTexture = nullptr;
 }
 
-Obstacle::FreeObstacle() //giải phóng vật cản
+Obstacle::FreeObstacle() 
 {
 	posX1 = 0;
 	posY1 = 0;
@@ -21,7 +21,7 @@ Obstacle::FreeObstacle() //giải phóng vật cản
         }
 }
 
-void Obstacle::LoadFromFile(std::string path, SDL_Renderer* gRenderer) //tải ảnh của vật cản
+void Obstacle::LoadFromFile(std::string path, SDL_Renderer* gRenderer) 
 {
 	SDL_Texture* tmpTexture = nullptr;
 
@@ -51,7 +51,7 @@ void Obstacle::LoadFromFile(std::string path, SDL_Renderer* gRenderer) //tải �
 	ObsTexture = tmpTexture;
 }
 
-void Obstacle::Move(const int &acceleration) //di chuyển của vật cản với gia tốc
+void Obstacle::Move(const int &acceleration) 
 {
 	posY1 += OBS_SPEED + acceleration;
 	if (posY1  > SCREEN_HEIGHT)
@@ -61,7 +61,7 @@ void Obstacle::Move(const int &acceleration) //di chuyển của vật cản v�
 	}
 }
 
-void Obstacle::Render(SDL_Renderer* gRenderer, SDL_Rect* currentClip) //vẽ vật cản
+void Obstacle::Render(SDL_Renderer* gRenderer, SDL_Rect* currentClip) 
 {
 	SDL_Rect renderSpace = { posX1, posY1, eWidth, eHeight };
 	if (currentClip != nullptr)
@@ -72,27 +72,27 @@ void Obstacle::Render(SDL_Renderer* gRenderer, SDL_Rect* currentClip) //vẽ v�
 	SDL_RenderCopy(gRenderer, ObsTexture, currentClip, &renderSpace);
 }
 
-int Obstacle::GetSpeed(const int &acceleration) //cập nhật tốc độ
+int Obstacle::GetSpeed(const int &acceleration) 
 {
 	return OBS_SPEED + acceleration;
 }
 
-int Obstacle::GetPosX() //vị trí x
+int Obstacle::GetPosX() 
 {
 	return posX1;
 }
 
-int Obstacle::GetPosY() //vị trí y
+int Obstacle::GetPosY() 
 {
 	return posY1;
 }
 
-int Obstacle::GetWidth() //chiều rộng
+int Obstacle::GetWidth() 
 {
 	return eWidth;
 }
 
-int Obstacle::GetHeight() //chiều dài
+int Obstacle::GetHeight() 
 {
 	return eHeight;
 }
