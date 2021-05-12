@@ -266,7 +266,7 @@ void HandlePauseButton(SDL_Event* e,
 	}
 }
 
-void GenerateObs(Obstacle& obs1,Obstacle& obs2,Obstacle& obs3,SDL_Renderer * gRenderer) //sinh vật cản
+void GenerateObs(Obstacle& obs1,Obstacle& obs2,Obstacle& obs3,SDL_Renderer * gRenderer) 
 {
 	obs1.LoadFromFile("imgs/enemy/obstacles1.png", gRenderer);
 	obs2.LoadFromFile("imgs/enemy/obstacles.png", gRenderer);
