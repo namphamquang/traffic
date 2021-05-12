@@ -1,46 +1,43 @@
 #include "car.h"
 
-Car::Car() //khởi tạo xe
+Car::Car() 
 {
 	posX = (SCREEN_WIDTH-40)/2;
 	posY = SCREEN_HEIGHT-80;
 	status = 0;
 }
 
-void Car::HandleEvent(SDL_Event& e) //điều khiển xe
+void Car::HandleEvent(SDL_Event& e) 
 {
-	if (e.type == SDL_KEYDOWN)
-	{
+	switch(e.type)
+	{ case SDL_KEYDOWN:
 		switch (e.key.keysym.sym)
 		{
 			case SDLK_LEFT:
 			{
-
-
 					status =LEFT ;
 					break;
-
 			}
 			case SDLK_RIGHT:
                 {
-
-
 					status =RIGHT ;
 					break;
-
-			}
-		}
+                }
+		} break;
+		case SDL_KEYUP: {status=0; break;}
 	}
 }
-void Car:: UpdateMove() //cập nhật vị trí của xe
+void Car:: UpdateMove() 
   {
-      if (status == LEFT)
-            {posX -= 3;}
-      else  if (status ==RIGHT)
+      switch (status)
+      {case LEFT:
+            {posX -= 10; break;}
+      case RIGHT:
            {
-               posX += 3;
+               posX += 10; break;
            }
 
+      }
 
         if (posX < 80)
             posX = 80;
@@ -49,7 +46,7 @@ void Car:: UpdateMove() //cập nhật vị trí của xe
 }
 
 
-void Car::Render(SDL_Rect* currentClip, SDL_Renderer *gRenderer, LTexture gCarTexture) //vẽ xe
+void Car::Render(SDL_Rect* currentClip, SDL_Renderer *gRenderer, LTexture gCarTexture) 
 {
 	gCarTexture.Render(posX, posY, gRenderer, currentClip);
 }
