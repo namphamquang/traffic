@@ -1,6 +1,6 @@
 #include "common.h"
 
-void LogError(std::string msg, int error_code) //in lỗi tải
+void LogError(std::string msg, int error_code) 
 {
 	if (error_code == SDL_ERROR)
 	{
